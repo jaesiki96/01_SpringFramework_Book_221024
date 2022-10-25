@@ -8,4 +8,13 @@
         insert into book_table(bookName, bookAuthor, bookPrice, bookPublisher)
             values (#{bookName}, #{bookAuthor}, #{bookPrice}, #{bookPublisher})
     </insert>
+    <select id="findBook" resultType="book">
+        select * from book_table where bookId=2
+    </select>
+    <select id="findAll" resultType="book">
+        select * from book_table
+    </select>
+    <select id="findById" parameterType="Long" resultType="book">
+        select * from book_table where bookId=#{bookId}
+    </select>
 </mapper>

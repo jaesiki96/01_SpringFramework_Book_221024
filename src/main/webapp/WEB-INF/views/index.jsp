@@ -12,5 +12,7 @@
 </head>
 <body>
     <a href="/save">신규 도서 등록</a>
+    <a href="/findBook">2번책 조회</a>
+    <a href="/books">목록조회</a>
 </body>
 </html>
